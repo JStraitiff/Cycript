@@ -5,9 +5,9 @@
 batteryCharge = SBUIController.sharedInstance.batteryCapacityAsPercentage.toString()
 
 if(batteryCharge == 100) {
-	batteryCharge = "Fully Charged\n";
+	batteryCharge = @"Fully Charged\n";
 } else if(batteryCharge == 10) {
-	batteryCharge = "Plug In Very Soon\n";
+	batteryCharge = @"Plug In Very Soon\n";
 }
 
 SpringBoard.prototype.toggleBattery = function()
